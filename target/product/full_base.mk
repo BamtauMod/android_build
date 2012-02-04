@@ -19,8 +19,8 @@
 # bes used for AOSP builds on various target devices.
 
 PRODUCT_PACKAGES := \
-    OpenWnn \
-    PinyinIME \
+#   OpenWnn \
+#   PinyinIME \
     VoiceDialer \
     libWnnEngDic \
     libWnnJpnDic \
@@ -28,6 +28,10 @@ PRODUCT_PACKAGES := \
 
 # Additional settings used in all AOSP builds
 PRODUCT_PROPERTY_OVERRIDES := \
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.config.ringtone=Girtab.ogg \
+    ro.config.notification_sound=Proxima.ogg \
+    ro.config.alarm_alert=Cesium.ogg
     keyguard.no_require_sim=true
 
 # Put en_US first in the list, to make it default.
